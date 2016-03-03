@@ -1,0 +1,16 @@
+.item {
+  margin: 20px 0; }
+  .item .item-title {
+    color: #2196f3;
+    font-size: 0.7em; }
+    .item .item-title::before {
+      padding-right: 5px; }
+  .item .item-subtitle {
+    margin-bottom: 2px;
+    font-size: 0.85em; }
+  .item .item-intro {
+    font-size: 0.7em; }
+  .item .item-detail {
+    font-size: 0.7em;
+    line-height: 20px;
+    color: #777; }

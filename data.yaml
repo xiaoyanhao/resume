@@ -36,24 +36,19 @@ skill:
 
   -
     title: JS模块加载器
-    intro: RequireJS Sea.js
+    intro: Require.js Sea.js
 
   -
     title: 前端自动化工作流
     intro: Gulp Grunt
 
-  # -
-  #   title: 前端自动化测试工具
-  #   intro:
-  #   - Mocha
+  -
+    title: 前端自动化测试工具
+    intro: Mocha
 
-  # -
-  #   title: 前端框架
-  #   intro:
-  #   - Materialize
-  #   - Boostrap
-  #   - SemanticUI
-  #   - Ionic
+  -
+    title: 前端框架
+    intro: Materialize Boostrap SemanticUI Ionic
 
 award: 
   title: 获奖经历
@@ -106,14 +101,6 @@ project:
       使用BrowserSync实现多终端浏览器同步测试，并让浏览器实时快速地响应文件更改而无需手动刷新页面。
 
   -
-    title: Webby前端编程专业化评测平台
-    intro: 第十一届中山大学“37游戏杯”软件创新大赛开发赛作品 | 2015.09 - 2015.11
-    detail: >
-      为解决大学生学习前端开发局限于课堂和网络教程，缺乏实战锻炼机会的现状，而设计开发的集中式前端编程平台。
-      平台初衷是提供海量题目以及定期竞赛吸引广大前端开发者参与其中，探索入门，相互竞技，共同提高。并可能为企业与前端开发者架起需与求的双向桥梁。
-      平台基于MeteorJS的后台框架和Google Material Design的设计风格，Jade、Sass和LiveScript作为开发语言。
-
-  -
     title: ohChat社交应用
     intro: 独立开发 | 2015.08 - 2015.09
     detail: >
@@ -133,13 +120,21 @@ school:
       课程主要学习HTML(5)、CSS(3)、JavaScript、ExpressJS和AngularJS。
       每周主要负责疑难解答、批改作业和技术心得分享。
 
-  # -
-  #   title: X-Timer计时应用
-  #   intro: 大三安卓课程团队项目 | 2015.12 - 2016.01
-  #   detail: >
-  #     X-Timer是安卓平台的计时应用。
-  #     我负责前端图表组件和后台的开发：结合WebView和Chart.js开发自定义的图表组件；
-  #     使用ExpressJS在阿里云部署简单的后台服务器，实现登录注册和支持（多）文件上传和下载的云同步备份功能。
+  -
+    title: Webby前端编程专业化评测平台
+    intro: 第十一届中山大学“37游戏杯”软件创新大赛开发赛作品 | 2015.09 - 2015.11
+    detail: >
+      为解决大学生学习前端开发局限于课堂和网络教程，缺乏实战锻炼机会的现状，而设计开发的集中式前端编程平台。
+      平台初衷是提供海量题目以及定期竞赛吸引广大前端开发者参与其中，探索入门，相互竞技，共同提高。并可能为企业与前端开发者架起需与求的双向桥梁。
+      平台基于MeteorJS的后台框架和Google Material Design的设计风格，Jade、Sass和LiveScript作为开发语言。
+
+  -
+    title: X-Timer计时应用
+    intro: 大三安卓课程团队项目 | 2015.12 - 2016.01
+    detail: >
+      X-Timer是安卓平台的计时应用。
+      我负责前端图表组件和后台的开发：结合WebView和Chart.js开发自定义的图表组件；
+      使用ExpressJS在阿里云部署简单的后台服务器，实现登录注册和支持（多）文件上传和下载的云同步备份功能。
 
   # -
   #   title: BookHub小说协同写作平台
