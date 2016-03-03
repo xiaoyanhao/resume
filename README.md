@@ -6,20 +6,18 @@ A simple but efficient resume generator based on Jade, Sass, YAML and Gulp.
 
 1. Download and install dependencies.
 ```
-  npm install
+npm install
 ```  
-
 2. Fill your resume data in `data.yaml`
-
-3. Generate your static resume page.
+3. 3. Generate your static resume page.
 ```
-  gulp
+gulp
 ```
   
 # Deploy
-Deploy your resume page in your github gh-pages easily.
+Deploy your resume page in your github pages easily.
 ```
-  gulp deploy
+gulp deploy
 ```
   
 # License
