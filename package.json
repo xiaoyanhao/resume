@@ -6,6 +6,8 @@
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "js-yaml": "^3.5.3",
+    "rimraf": "^2.5.2",
+    "run-sequence": "^1.1.5",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-data": "^1.2.1",

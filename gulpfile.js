@@ -1,18 +1,30 @@
 var fs = require('fs');
 var gulp = require('gulp');
 var yaml = require('js-yaml');
+var rimraf = require('rimraf');
 var data = require('gulp-data');
 var jade = require('gulp-jade');
 var sass = require('gulp-sass');
 var ghPages = require('gulp-gh-pages');
+var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
+
+// clean dist directory
+gulp.task('clean', function(cb) {
+  rimraf('./dist', cb);
+});
+
+// copy assets directory
+gulp.task('static', ['clean'], function() {
+  return gulp.src('./assets/**/*')
+    .pipe(gulp.dest('./dist/assets'));
+});
 
 // static server + watching sass/jade/html files
 gulp.task('serve', ['jade', 'sass'], function() {
   browserSync.init({
     server: {
-      baseDir: './',
-      index: 'dist/index.html'
+      baseDir: './dist'
     }
   });
 
@@ -41,8 +53,10 @@ gulp.task('sass', function() {
 
 // publish contents to Github pages
 gulp.task('deploy', function() {
-  return gulp.src(['./dist/**/*', './assets/**/*'])
+  return gulp.src(['./dist/**/*', './assets'])
     .pipe(ghPages());
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', function(cb) {
+  runSequence('static', 'serve', cb);
+});
