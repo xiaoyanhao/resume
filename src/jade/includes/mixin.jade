@@ -1,9 +1,0 @@
-mixin item(classname, icon, item)
-  div.item(class=classname)
-    i.item-title.fa(class=icon) #{item.title}
-    each subitem in item.subitem
-      h3.item-subtitle #{subitem.title}
-      span.item-intro #{subitem.intro}
-      if subitem.detail
-        p.item-detail #{subitem.detail}
-
