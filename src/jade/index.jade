@@ -1,0 +1,26 @@
+doctype html
+
+html(lang='zh-CN')
+  head
+    title= title
+
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+    link(rel='stylesheet' type='text/css' href='assets/font-awesome-4.4.0/css/font-awesome.min.css')
+    link(rel='stylesheet' type='text/css' href='dist/css/index.css')
+
+  include includes/mixin
+
+  body
+    .main-container
+      .left-container
+
+        include includes/information
+        +item('education', 'fa-graduation-cap', education)
+        +item('skill', 'fa-magic', skill)
+        +item('award', 'fa-trophy', award)
+      .right-container
+        +item('work', 'fa-briefcase', work)
+        +item('project', 'fa-code', project)
+        +item('school', 'fa-university', school)

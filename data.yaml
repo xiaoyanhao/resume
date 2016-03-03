@@ -1,0 +1,150 @@
+title: 肖燕浩－个人简历
+
+information:
+  name: 肖燕浩
+  job: 前端工程师
+  email: xiaoyh5@mail2.sysu.edu.cn
+  mobile: 18819473337
+  github: github.com/xiaoyanhao
+  wechat: Max_1994_
+
+education: 
+  title: 教育经历
+  subitem:
+  -
+    title: 中山大学
+    intro: 软件工程（本科）| 2013.08 - 2017.06
+
+skill: 
+  title: 技能掌握
+  subitem:
+  -
+    title: 网页技术
+    intro: HTML(5) CSS(3) JavaScript
+
+  -
+    title: 预处理语言
+    intro: Jade Sass LiveScript TypeScript
+
+  -
+    title: 后台开发
+    intro: NodeJS(Express Meteor Angular) Python
+
+  -
+    title: JS工具库
+    intro: jQuery Underscore.js Three.js Chart.js
+
+  -
+    title: JS模块加载器
+    intro: RequireJS Sea.js
+
+  -
+    title: 前端自动化工作流
+    intro: Gulp Grunt
+
+  # -
+  #   title: 前端自动化测试工具
+  #   intro:
+  #   - Mocha
+
+  # -
+  #   title: 前端框架
+  #   intro:
+  #   - Materialize
+  #   - Boostrap
+  #   - SemanticUI
+  #   - Ionic
+
+award: 
+  title: 获奖经历
+  subitem: 
+  -
+    title: 第九届中山大学百田杯新生软件创意大赛
+    intro: 二等奖 | 2013.12
+  -
+    title: 第十七届中山大学程序设计竞赛
+    intro: 三等奖 | 2014.04
+  -
+    title: 校优秀学生奖学金、国家励志奖学金
+    intro: 二等奖 | 2014 - 2015年度
+
+work: 
+  title: 工作经历
+  subitem:
+  # -
+  #   title: 作业云系统
+  #   intro: 中山大学现代互联网应用实验室 | 2016.02 - 现在
+  #   detail: >
+  #     基于AngularJS和Ionic，负责移动端的前端开发（尚在进行中）。
+
+  -
+    title: b+电子控制系统研发云
+    intro: 中山大学现代互联网应用实验室 | 2015.07 - 2015.09
+    detail: >
+      基于MeteorJS开发通知组件。
+      负责通知栏和Toast的全部设计开发，包括前端样式和动画、交互行为、后台数据处理和文档编写（介绍、API说明等）。
+      运用MongoDB，独立管理一个数据集；
+      涉及基本的JS设计模式的优化改进。
+
+  -
+    title: '@+弹幕社交应用'
+    intro: 中山大学现代互联网应用实验室 | 2015.01 - 2015.02
+    detail: >
+      参与移动端sign模块的重构开发，主要按照项目规范编写移动端页面，实现前端JS的数据逻辑处理和交互行为，重点涉及AJAX技术。
+      项目使用NPM和Bower进行包管理，Grunt驱动前端自动化工作流，引用RequireJS作为模块加载器，遵循AMD模块化编程规范。
+      这次培训加开发的经历让我熟悉了搭建前端项目的一些规范和标准，具有巨大的启蒙价值。
+
+project: 
+  title: 个人项目
+  subitem:
+  -
+    title: 在线简历生成器
+    intro: 独立开发 | 2016.02 - 2016.03
+    detail: >
+      从YAML文件读取数据，使用Jade模版生成HTML，Sass生成响应式布局样式。
+      使用Gulp驱动工作流、架设本地服务器、帮助部署到Github Pages。
+      使用BrowserSync实现多终端浏览器同步测试，并让浏览器实时快速地响应文件更改而无需手动刷新页面。
+
+  -
+    title: Webby前端编程专业化评测平台
+    intro: 第十一届中山大学“37游戏杯”软件创新大赛开发赛作品 | 2015.09 - 2015.11
+    detail: >
+      为解决大学生学习前端开发局限于课堂和网络教程，缺乏实战锻炼机会的现状，而设计开发的集中式前端编程平台。
+      平台初衷是提供海量题目以及定期竞赛吸引广大前端开发者参与其中，探索入门，相互竞技，共同提高。并可能为企业与前端开发者架起需与求的双向桥梁。
+      平台基于MeteorJS的后台框架和Google Material Design的设计风格，Jade、Sass和LiveScript作为开发语言。
+
+  -
+    title: ohChat社交应用
+    intro: 独立开发 | 2015.08 - 2015.09
+    detail: >
+      模仿微信安卓版本而开发的移动端社交应用。
+      基于ExpressJS后台框架，采用典型的MVC开发模型。
+      前端样式基本完善，利用Hammer.js实现一些触屏手势的交互。
+      结合PassportJS完全实现登录/注册模块细节。
+
+school: 
+  title: 学生活动
+  subitem:
+  -
+    title: Web2.0课程
+    intro: 技术TA | 2015.09 - 2016.01
+    detail: >
+      担任助教工作，为大二的师弟师妹们提供课程入门指引和技术指导。
+      课程主要学习HTML(5)、CSS(3)、JavaScript、ExpressJS和AngularJS。
+      每周主要负责疑难解答、批改作业和技术心得分享。
+
+  # -
+  #   title: X-Timer计时应用
+  #   intro: 大三安卓课程团队项目 | 2015.12 - 2016.01
+  #   detail: >
+  #     X-Timer是安卓平台的计时应用。
+  #     我负责前端图表组件和后台的开发：结合WebView和Chart.js开发自定义的图表组件；
+  #     使用ExpressJS在阿里云部署简单的后台服务器，实现登录注册和支持（多）文件上传和下载的云同步备份功能。
+
+  # -
+  #   title: BookHub小说协同写作平台
+  #   intro: 大二软件过程改进课程团队项目 | 2015.05 - 2015.07
+  #   detail: >
+  #     BookHub是专注于协同协作的小说网，为小说创作者提供一个方便易用的交流与写作平台。
+  #     参照Git原理设计了自定义的fork、pull request和merge模块。
+  #     网站基于MeteorJS和SemanticUI。
