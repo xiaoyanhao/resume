@@ -1,5 +1,5 @@
 # Static Resume Generator
-A simple but efficient resume generator based on Jade, Sass, YAML and Gulp.
+A simple, responsive and efficient resume generator based on Jade, Sass, YAML and Gulp.
 
 ## Usage
 1. Run `npm install` to download and install dependencies.
