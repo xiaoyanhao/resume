@@ -27,8 +27,8 @@ skill:
     intro: Jade Sass LiveScript TypeScript
 
   -
-    title: 后台开发
-    intro: NodeJS(Express Meteor Angular) Python
+    title: NodeJS
+    intro: ExpressJS MeteorJS
 
   -
     title: JS工具库
@@ -43,18 +43,18 @@ skill:
     intro: Gulp Grunt
 
   -
-    title: 前端自动化测试工具
-    intro: Mocha
+    title: 前端JS MVW框架
+    intro: AngularJS
 
   -
-    title: 前端框架
+    title: 前端UI框架
     intro: Materialize Boostrap SemanticUI Ionic
 
 award: 
   title: 获奖经历
   subitem: 
   -
-    title: 第九届中山大学百田杯新生软件创意大赛
+    title: 第九届中山大学“百田杯”新生软件创意大赛
     intro: 二等奖 | 2013.12
   -
     title: 第十七届中山大学程序设计竞赛
