@@ -52,7 +52,9 @@ body {
       background-color: white; }
       body .main-container {
         margin: 0;
-        box-shadow: none; } }
+        box-shadow: none;
+        height: 1050px;
+        overflow: hidden; } }
 
 .information .avatar {
   height: 150px; }
