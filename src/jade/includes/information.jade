@@ -1,6 +1,6 @@
 .information.item
   .avatar
-    img(src='assets/images/me.jpg' alt='about me')
+    img(src='#{information.avatar}' alt='my avatar')
 
   h1.name #{information.name}
   p.job #{information.job}
@@ -9,9 +9,9 @@
     li.email
       i.fa.fa-envelope
       | #{information.email}
-    li.mobile
-      i.fa.fa-phone
-      | #{information.mobile}
+    //- li.mobile
+    //-   i.fa.fa-phone
+    //-   | #{information.mobile}
     li.github
       i.fa.fa-github
       | #{information.github}
