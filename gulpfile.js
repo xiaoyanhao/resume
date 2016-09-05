@@ -27,6 +27,7 @@ var paths = {
     reload: 'dist/index.html'
   },
   deploy: 'dist/',
+  dist: 'dist/**/*',
   ghPages: '.publish/',
   data: 'data.yaml'
 }
@@ -77,7 +78,7 @@ function Watch() {
 
 // Publish contents to Github pages
 function Deploy() {
-  return gulp.src(paths.deploy)
+  return gulp.src(paths.dist)
     .pipe(ghPages());
 }
 
