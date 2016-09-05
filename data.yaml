@@ -2,11 +2,12 @@ title: 肖燕浩－个人简历
 
 information:
   name: 肖燕浩
-  job: 前端工程师
+  job: 前端开发工程师
   email: xiaoyh5@mail2.sysu.edu.cn
+  mobile: 18819473337
   github: github.com/xiaoyanhao
   wechat: Max_1994_
-  avatar: assets/images/wechat.jpg
+  avatar: assets/images/me.jpg
 
 education: 
   title: 教育经历
@@ -19,36 +20,36 @@ skill:
   title: 技能掌握
   subitem:
   -
-    title: 网页技术
-    intro: HTML(5) CSS(3) JavaScript
+    title: 前端基础
+    intro: HTML(5) CSS(3) ES(5/6)
 
   -
-    title: 预处理语言
-    intro: Jade Sass LiveScript TypeScript
+    title: 预处理编程语言
+    intro: Jade Sass LiveScript
 
   -
-    title: NodeJS
-    intro: ExpressJS MeteorJS
+    title: 后台技术
+    intro: Node.js Express.js Meteor.js
 
   -
-    title: JS工具库
-    intro: jQuery Underscore.js Three.js Chart.js
+    title: 前端模块化
+    intro: CMD AMD UMD ES6-Modules
 
   -
-    title: JS模块加载器
-    intro: Require.js Sea.js
+    title: 前端自动化构建工具
+    intro: Gulp Grunt Babel Webpack 
 
   -
-    title: 前端自动化工作流
-    intro: Gulp Grunt
+    title: 前端JS框架
+    intro: React Redux Angular Vue
 
   -
-    title: 前端JS MVW框架
-    intro: AngularJS
+    title: 前端JS工具库
+    intro: jQuery lodash Chart.js
 
   -
-    title: 前端UI框架
-    intro: Materialize Boostrap SemanticUI Ionic
+    title: 其他基础
+    intro: 计算机网络 网页性能优化 数据库技术
 
 award: 
   title: 获奖经历
@@ -64,13 +65,13 @@ award:
     intro: 二等奖 | 2014 - 2015年度
 
 work: 
-  title: 工作经历
+  title: 实习经历
   subitem:
-  # -
-  #   title: 作业云系统
-  #   intro: 中山大学现代互联网应用实验室 | 2016.02 - 现在
-  #   detail: >
-  #     基于AngularJS和Ionic，负责移动端的前端开发（尚在进行中）。
+  -
+    title: 阿里巴巴-B2B-技术部-前端技术部
+    intro: 2016.07 - 2016.09
+    detail: >
+      参与外贸综合服务的增值服务环节的业务开发，包括金融和物流。主要工作包括项目重构（涉及开发时自动化工作流的优化）和动态表单的探索。
 
   -
     title: b+电子控制系统研发云
@@ -93,16 +94,31 @@ project:
   title: 个人项目
   subitem:
   -
+    title: gulp插件开发
+    intro: 2016.06
+    detail: >
+      gulp-bower-files-from-html。
+      为了从繁杂的Bower包管理中取出项目所需要的库文件，根据开发者的需求，解析在HTML中与bower_component有关的<script>和<link>标签，作出适当处理，将这些主要的文件抽取出来，放到生产代码目录。
+      从中体验到插件开发的基本准则和乐趣。
+
+  -
+    title: Github Markdown Editor
+    intro: 2016.05
+    detail: >
+      因喜爱github味道的markdown，基于marked开源编译器和github的MD样式，使用react搭建了一个干净的MD编辑器。
+      实现可折叠的布局、即时预览、同步滚动、本地图片上传、自动保存草稿、语法工具栏，草稿MD和效果PDF的下载。
+
+  -
     title: 在线简历生成器
-    intro: 独立开发 | 2016.02 - 2016.03
+    intro: 2016.03
     detail: >
       从YAML文件读取数据，使用Jade模版生成HTML，Sass生成响应式布局样式。
       使用Gulp驱动工作流、架设本地服务器、帮助部署到Github Pages。
-      使用BrowserSync实现多终端浏览器同步测试，并让浏览器实时快速地响应文件更改而无需手动刷新页面。
+      使用BrowserSync实现浏览器自动刷新和多终端浏览器同步测试。
 
   -
     title: ohChat社交应用
-    intro: 独立开发 | 2015.08 - 2015.09
+    intro: 2015.08 - 2015.09
     detail: >
       模仿微信安卓版本而开发的移动端社交应用。
       基于ExpressJS后台框架，采用典型的MVC开发模型。
@@ -120,21 +136,21 @@ school:
       课程主要学习HTML(5)、CSS(3)、JavaScript、ExpressJS和AngularJS。
       每周主要负责疑难解答、批改作业和技术心得分享。
 
-  -
-    title: Webby前端编程专业化评测平台
-    intro: 第十一届中山大学“37游戏杯”软件创新大赛开发赛作品 | 2015.09 - 2015.11
-    detail: >
-      为解决大学生学习前端开发局限于课堂和网络教程，缺乏实战锻炼机会的现状，而设计开发的集中式前端编程平台。
-      平台初衷是提供海量题目以及定期竞赛吸引广大前端开发者参与其中，探索入门，相互竞技，共同提高。并可能为企业与前端开发者架起需与求的双向桥梁。
-      平台基于MeteorJS的后台框架和Google Material Design的设计风格，Jade、Sass和LiveScript作为开发语言。
+  # -
+  #   title: Webby前端编程专业化评测平台
+  #   intro: 第十一届中山大学“37游戏杯”软件创新大赛开发赛作品 | 2015.09 - 2015.11
+  #   detail: >
+  #     为解决大学生学习前端开发局限于课堂和网络教程，缺乏实战锻炼机会的现状，而设计开发的集中式前端编程平台。
+  #     平台初衷是提供海量题目以及定期竞赛吸引广大前端开发者参与其中，探索入门，相互竞技，共同提高。并可能为企业与前端开发者架起需与求的双向桥梁。
+  #     平台基于MeteorJS的后台框架和Google Material Design的设计风格，Jade、Sass和LiveScript作为开发语言。
 
-  -
-    title: X-Timer计时应用
-    intro: 大三安卓课程团队项目 | 2015.12 - 2016.01
-    detail: >
-      X-Timer是安卓平台的计时应用。
-      我负责前端图表组件和后台的开发：结合WebView和Chart.js开发自定义的图表组件；
-      使用ExpressJS在阿里云部署简单的后台服务器，实现登录注册和支持（多）文件上传和下载的云同步备份功能。
+  # -
+  #   title: X-Timer计时应用
+  #   intro: 大三安卓课程团队项目 | 2015.12 - 2016.01
+  #   detail: >
+  #     X-Timer是安卓平台的计时应用。
+  #     我负责前端图表组件和后台的开发：结合WebView和Chart.js开发自定义的图表组件；
+  #     使用ExpressJS在阿里云部署简单的后台服务器，实现登录注册和支持（多）文件上传和下载的云同步备份功能。
 
   # -
   #   title: BookHub小说协同写作平台

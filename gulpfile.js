@@ -1,62 +1,87 @@
 var fs = require('fs');
+var del = require('del');
 var gulp = require('gulp');
 var yaml = require('js-yaml');
-var rimraf = require('rimraf');
 var data = require('gulp-data');
 var jade = require('gulp-jade');
 var sass = require('gulp-sass');
 var ghPages = require('gulp-gh-pages');
-var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 
-// clean dist directory
-gulp.task('clean', function(cb) {
-  rimraf('./dist', cb);
-});
+var paths = {
+  jade: {
+    src: 'src/jade/index.jade',
+    dest: 'dist/'
+  },
+  sass: {
+    src: 'src/sass/index.sass',
+    dest: 'dist/css/'
+  },
+  assets: {
+    src: 'assets/**/*',
+    dest: 'dist/assets/'
+  },
+  watch: {
+    jade: 'src/jade/**/*.jade',
+    sass: 'src/sass/**/*.sass',
+    reload: 'dist/index.html'
+  },
+  deploy: 'dist/',
+  ghPages: '.publish/',
+  data: 'data.yaml'
+}
 
-// copy assets directory
-gulp.task('static', ['clean'], function() {
-  return gulp.src('./assets/**/*')
-    .pipe(gulp.dest('./dist/assets'));
-});
+// Clean dist/
+function Clean() {
+  return del([paths.deploy, paths.ghPages]);
+}
 
-// static server + watching sass/jade/html files
-gulp.task('serve', ['jade', 'sass'], function() {
-  browserSync.init({
-    server: {
-      baseDir: './dist'
-    }
-  });
+// Copy assets/
+function Assets() {
+  return gulp.src(paths.assets.src)
+    .pipe(gulp.dest(paths.assets.dest));
+}
 
-  gulp.watch('src/sass/**/*.sass', ['sass']);
-  gulp.watch(['src/jade/**/*.jade', 'data.yaml'], ['jade']);
-  gulp.watch('dist/index.html').on('change', browserSync.reload);
-});
-
-// compile jade into HTML
-gulp.task('jade', function() {
-  return gulp.src('src/jade/index.jade')
+// Compile jade into HTML
+function Jade() {
+  return gulp.src(paths.jade.src)
     .pipe(data(function(file) {
-      return yaml.safeLoad(fs.readFileSync('./data.yaml', 'utf-8'));
+      return yaml.safeLoad(fs.readFileSync(paths.data, 'utf-8'));
     }))
     .pipe(jade())
-    .pipe(gulp.dest('dist/'));
-});
+    .pipe(gulp.dest(paths.jade.dest));
+  
+}
 
-// compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-  return gulp.src('src/sass/index.sass')
+// Compile sass into CSS & auto-inject into browsers
+function Sass() {
+  return gulp.src(paths.sass.src)
     .pipe(sass())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest(paths.sass.dest))
     .pipe(browserSync.stream());
-});
+}
 
-// publish contents to Github pages
-gulp.task('deploy', function() {
-  return gulp.src(['./dist/**/*', './assets'])
+// Static server + watching sass/jade/html files
+function Watch() {
+  browserSync.init({
+    server: {
+      baseDir: paths.deploy
+    },
+    open: false
+  });
+
+  gulp.watch(paths.watch.sass, Sass);
+  gulp.watch([paths.watch.jade, paths.data], Jade);
+  gulp.watch(paths.watch.reload).on('change', browserSync.reload);
+}
+
+// Publish contents to Github pages
+function Deploy() {
+  return gulp.src(paths.deploy)
     .pipe(ghPages());
-});
+}
 
-gulp.task('default', function(cb) {
-  runSequence('static', 'serve', cb);
-});
+var Build = gulp.series(Clean, gulp.parallel(Assets, Jade, Sass), Watch);
+
+exports.default = Build;
+exports.deploy = Deploy;
